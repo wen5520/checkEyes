@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>测视力</title>
+    <link rel="stylesheet" href="css/checkeyes.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/checkeyes.js"></script>
+</head>
+<body>
+<div class="page">
+    <p class="warmReminder">温馨提示：为保证结果的准确性，请务必将手机保持在眼前40cm处，将您第一眼看到的E的开口方向，在下方如实选择</p>
+    <p class="tips">先测左眼，请捂住右眼</p>
+    <!-- E -->
+    <div class="EBox">
+        <img class="Eimg" src="images/white.png">
+    </div>
+    <!-- 尺子 -->
+    <div class="row">
+        <ul class="record"></ul>
+        <input type="hidden" name="number" initial-value="9" record-value="4.4" value="4.4">
+        <div class="ruler ruler-eye">
+            <div class="main" value="-1">
+                <ul data-initial='true'>
+                    <li><span class="num">3.5</span><span class="decimal">0.03</span></li>
+                    <li><span class="num">3.6</span><span class="decimal">0.04</span></li>
+                    <li><span class="num">3.7</span><span class="decimal">0.05</span></li>
+                    <li><span class="num">3.8</span><span class="decimal">0.06</span></li>
+                    <li><span class="num">3.9</span><span class="decimal">0.08</span></li>
+                    <li><span class="num">4.0</span><span class="decimal">0.1</span></li>
+                    <li><span class="num">4.1</span><span class="decimal">0.12</span></li>
+                    <li><span class="num">4.2</span><span class="decimal">0.15</span></li>
+                    <li><span class="num">4.3</span><span class="decimal">0.2</span></li>
+                    <li><span class="num">4.4</span><span class="decimal">0.25</span></li>
+                    <li><span class="num">4.5</span><span class="decimal">0.3</span></li>
+                    <li><span class="num">4.6</span><span class="decimal">0.4</span></li>
+                    <li><span class="num">4.7</span><span class="decimal">0.5</span></li>
+                    <li><span class="num">4.8</span><span class="decimal">0.6</span></li>
+                    <li><span class="num">4.9</span><span class="decimal">0.8</span></li>
+                    <li><span class="num">5.0</span><span class="decimal">1.0</span></li>
+                    <li><span class="num">5.1</span><span class="decimal">1.2</span></li>
+                    <li><span class="num">5.2</span><span class="decimal">1.5</span></li>
+                    <li><span class="num">5.3</span><span class="decimal">2.0</span></li>
+                </ul>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <!-- 按钮 -->
+    <div class="direction">
+        <div class="btns top" data-direction="1">上</div>
+        <div class="middle">
+            <div class="btns left" data-direction="4">左</div>
+            <div class="btns invisibility" data-direction="0">看不清</div>
+            <div class="btns right" data-direction="2">右</div>
+        </div>
+        <div class="btns bottom"  data-direction="3">下</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font:22px/1.5 STHeiTi,\9ED1\4F53,helvetica Regular,Heiti SC;
+    color:#666;
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+.page{
+    height:100vh;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    flex-direction:column; 
+    font-family: '微软雅黑,Microsoft YaHei';
+}
+.warmReminder{
+    padding:7px 16px;
+    line-height:18px;
+    font-size:12px;
+    background:#fef6b4;
+    color:#f7970e;
+}
+.tips{
+    font-size:12px;
+    color:#404040;
+    line-height:40px;
+}
+.EBox{
+    width:100%;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Eimg{
+    max-width:140px;
+    max-height:140px;
+    display: block;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*尺子*/
+.ruler{
+    border-top:2px solid #474747;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    width:338px;
+}
+.ruler:before,.ruler:after{
+    content: "";
+    position: absolute;
+    top:0;
+    height: 60px;
+    width:22%;
+    z-index: 3;
+    background: -webkit-linear-gradient(left,  rgb(255, 255, 255), rgba(255, 255, 255,0.5));
+    pointer-events:none;
+}
+
+.ruler:after{
+    right:0;
+    background: -webkit-linear-gradient(left,  rgba(255, 255, 255,0.5), rgb(255, 255, 255));
+}
+.ruler .main{
+    width:3000px;
+    position: relative;
+    left:0;
+}
+.ruler .main ul{
+    overflow: hidden;
+    -webkit-transform:translateX(140px);
+    display: flex;
+}
+.ruler li{
+    background: url(../images/rulerBg.png) left top no-repeat;
+    background-size:100% auto;
+    color:#474747;
+    width: 50px;
+    position: relative;
+    padding-top:20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ruler li span{
+    background:#fffed6;
+    color:#929292;
+}
+.ruler li .num{
+    font-size: 14px;
+
+}
+.ruler li .decimal{
+    font-size:12px;
+}
+.ruler .arrow{
+    width:0;
+    height: 0;
+    border:8px solid transparent;
+    border-top:8px solid #474747;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-8px;
+}
+
+
+/*记录条*/
+.record{
+    width:100%;
+    height:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recordLi{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    margin:0 5px;
+}
+
+
+/*按钮区*/
+.direction{
+    width:100%;
+    padding:20px 20px 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.middle{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+}
+
+.btns{
+    width:70px;
+    height:32px;
+    line-height:32px;
+    border-radius:10px;
+    background:#0068ac;
+    color:#fff;
+    font-size:12px;
+    text-align: center;
+}
+.invisibility{
+    margin:0 20px;
+    background:#c4c4c4;
+}
